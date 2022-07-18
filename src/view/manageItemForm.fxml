@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageItemPane" prefHeight="826.0" prefWidth="1278.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manageItemFormController">
+   <children>
+      <ImageView fx:id="imgBack" fitHeight="50.0" fitWidth="46.0" layoutX="14.0" layoutY="14.0" onMousePressed="#BackOnMousePressed">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/png-clipart-button-return-s-blue-text-thumbnail.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="496.0" layoutY="31.0" text="MANAGE ITEMS" underline="true">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="106.0" fitWidth="114.0" layoutX="1150.0" layoutY="11.0">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/108612_9321892_1703682_bd56abfc_image.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutY="138.0" prefHeight="693.0" prefWidth="1278.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Save Item">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="658.0" fitWidth="1278.0" layoutY="-2.0">
+                           <image>
+                              <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/360_F_434190838_3FCCIiag1LYlL1IA6pb0WPEEqxiZVfPO.jpg" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="525.0" layoutY="105.0" orientation="VERTICAL" prefHeight="526.0" prefWidth="2.0" style="-fx-background-color: black;" />
+                        <Label layoutX="483.0" layoutY="25.0" prefHeight="28.0" prefWidth="173.0" text="SAVE ITEMS" textFill="#0543ff">
+                           <font>
+                              <Font name="Ebrima Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="211.0" text="Code  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="269.0" text="Description  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="50.0" layoutY="321.0" text="Pack Size  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="48.0" layoutY="375.0" text="Qty On Hand  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="48.0" layoutY="430.0" text="Unit Price  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="500.0" text="Item Discount  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtDescription" alignment="CENTER" layoutX="208.0" layoutY="265.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPackSize" alignment="CENTER" layoutX="186.0" layoutY="317.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtQtyOnHand" alignment="CENTER" layoutX="211.0" layoutY="371.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtUnitPrice" alignment="CENTER" layoutX="181.0" layoutY="426.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtItemDiscount" alignment="CENTER" layoutX="211.0" layoutY="496.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnSave" layoutX="121.0" layoutY="566.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #38a0e0;" text="SAVE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnAddNew" layoutX="334.0" layoutY="130.0" mnemonicParsing="false" onAction="#addnewOnAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #38a0e0;" text="+Add New" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="lblCode" layoutX="186.0" layoutY="211.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Update &amp; Delete">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="658.0" fitWidth="665.0" layoutX="-5.0">
+                           <image>
+                              <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/supermarket-4052658_1280-600x400.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="709.0" layoutY="110.0" text="Code  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="675.0" layoutY="167.0" text="Description  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="690.0" layoutY="232.0" text="Pack Size  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="675.0" layoutY="297.0" text="Qty On Hand  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="683.0" layoutY="366.0" text="Unit Price  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="683.0" layoutY="434.0" text="Item Discount  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUnitPrice1" alignment="CENTER" layoutX="856.0" layoutY="360.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtItemDiscount1" alignment="CENTER" layoutX="856.0" layoutY="428.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtQtyOnHand1" alignment="CENTER" layoutX="856.0" layoutY="291.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDescription1" alignment="CENTER" layoutX="856.0" layoutY="161.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPackSize1" alignment="CENTER" layoutX="856.0" layoutY="226.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnUpdate" layoutX="708.0" layoutY="577.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #38a0e0;" text="UPDATE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDelete" layoutX="1043.0" layoutY="577.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #38a0e0;" text="DELETE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="cmbCode" layoutX="856.0" layoutY="106.0" onAction="#cmbCodeOnAction" prefHeight="31.0" prefWidth="230.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Load All Items">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblManageItem" layoutX="100.0" layoutY="99.0" prefHeight="451.0" prefWidth="1061.0">
+                          <columns>
+                            <TableColumn fx:id="colCode" prefWidth="159.0" text="Code" />
+                              <TableColumn fx:id="colDescription" prefWidth="255.0" text="Description" />
+                              <TableColumn fx:id="colPackSize" prefWidth="163.0" text="Pack Size" />
+                              <TableColumn fx:id="colUnitPrice" prefWidth="185.0" text="Unit Price" />
+                              <TableColumn fx:id="colDiscount" prefWidth="139.0" text="Discount" />
+                              <TableColumn fx:id="colQtyOnHand" prefWidth="159.0" text="Qty On Hand" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

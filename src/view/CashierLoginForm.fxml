@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="490.0" prefWidth="732.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierLoginFormController">
+   <children>
+      <ImageView fx:id="imgPlaceOrder" fitHeight="134.0" fitWidth="135.0" layoutX="95.0" layoutY="179.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/6570542.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgManageCustomer" fitHeight="167.0" fitWidth="155.0" layoutX="518.0" layoutY="162.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/customer-care-vector-icon-management-support-help-client-illustration-symbol-patient-assistance-sign-logo-customer-care-158325762.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutY="6.0" onMousePressed="#HomeOnMousePressed">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/home-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="288.0" layoutY="37.0" text="CASHIER">
+         <font>
+            <Font name="Bell MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="40.0" layoutY="93.0" prefHeight="2.0" prefWidth="653.0" style="-fx-background-color: black;" />
+      <Label layoutX="102.0" layoutY="347.0" text="Place Order">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="347.0" text="Manage Customer">
+         <font>
+            <Font name="Bell MT" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="433.0" prefHeight="18.0" prefWidth="189.0" text="Village SuperMarket pvt . ltd">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSearchOrder" fitHeight="134.0" fitWidth="129.0" layoutX="302.0" layoutY="190.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/search%20order.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="321.0" layoutY="358.0" text="Search Order">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

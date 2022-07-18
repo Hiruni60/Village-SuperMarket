@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="778.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministratorLoginFormController">
+   <children>
+      <ImageView fx:id="imgHome" fitHeight="61.0" fitWidth="61.0" layoutX="10.0" layoutY="16.0" onMousePressed="#HomeOnMousePressed">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/home-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="295.0" layoutY="449.0" prefHeight="18.0" prefWidth="189.0" text="Village SuperMarket pvt . ltd">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgManageItem" fitHeight="197.0" fitWidth="234.0" layoutX="484.0" layoutY="152.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/shopping-cart-icon-vector-eps-trolley-logo-web-icons-shop-button-182252657.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="552.0" layoutY="366.0" text="Manage Item">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="47.0" text="ADMINISTRATOR">
+         <font>
+            <Font name="Bell MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="50.0" layoutY="103.0" prefHeight="2.0" prefWidth="653.0" style="-fx-background-color: black;" />
+      <Label layoutX="176.0" layoutY="366.0" text="System Report">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSystemReport" fitHeight="173.0" fitWidth="164.0" layoutX="143.0" layoutY="176.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

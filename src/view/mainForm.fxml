@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="506.0" prefWidth="815.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormController">
+   <children>
+      <Label layoutX="304.0" layoutY="51.0" prefHeight="49.0" prefWidth="208.0" text="WELCOME" underline="true">
+         <font>
+            <Font name="Algerian" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="154.0" fitWidth="161.0" layoutY="-13.0">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/108612_9321892_1703682_bd56abfc_image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCashier" fitHeight="154.0" fitWidth="161.0" layoutX="494.0" layoutY="166.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/cashier.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAdministrator" fitHeight="154.0" fitWidth="152.0" layoutX="172.0" layoutY="166.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/administrator%20icon2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" layoutX="327.0" layoutY="370.0" prefHeight="49.0" prefWidth="161.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="120.0" layoutY="430.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above who are you....">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="464.0" prefHeight="18.0" prefWidth="189.0" text="Village SuperMarket pvt . ltd">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

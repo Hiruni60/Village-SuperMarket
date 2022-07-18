@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="systemReportPane" prefHeight="852.0" prefWidth="1261.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.systemReportFormController">
+   <children>
+      <ImageView fx:id="imgBack" fitHeight="50.0" fitWidth="46.0" layoutX="24.0" layoutY="24.0" onMousePressed="#BackOnMousePressed">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/png-clipart-button-return-s-blue-text-thumbnail.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="465.0" layoutY="28.0" text="SYSTEM REPORT" underline="true">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="106.0" fitWidth="114.0" layoutX="1117.0" layoutY="21.0">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/108612_9321892_1703682_bd56abfc_image.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutY="133.0" prefHeight="723.0" prefWidth="1261.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Moveble Item &amp; Least Moveble Item">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblOrderDetails1" layoutX="35.0" layoutY="104.0" prefHeight="336.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="colOrderId1" prefWidth="192.0" text="Order Id" />
+                              <TableColumn fx:id="colItemCode1" prefWidth="246.0" text="Item Code" />
+                              <TableColumn fx:id="colQty1" prefWidth="197.0" text="Qty" />
+                              <TableColumn fx:id="colDiscount1" prefWidth="166.0" text="Discount(Rs)" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="467.0" layoutY="22.0" prefHeight="34.0" prefWidth="317.0" text="MOST MOVEBLE ITEMS" textFill="#0543ff">
+                           <font>
+                              <Font name="Ebrima Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="407.0" layoutY="57.0" prefHeight="0.0" prefWidth="448.0" style="-fx-background-color: #0543ff;" />
+                        <Label fx:id="lblDiscount" layoutX="739.0" layoutY="470.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblQty" layoutX="561.0" layoutY="470.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblItemCode" layoutX="346.0" layoutY="470.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOrderId" layoutX="134.0" layoutY="470.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="294.0" layoutY="502.0" prefHeight="0.0" prefWidth="149.0" />
+                        <Separator layoutX="82.0" layoutY="500.0" prefHeight="0.0" prefWidth="149.0" />
+                        <Separator layoutX="529.0" layoutY="500.0" prefHeight="0.0" prefWidth="126.0" />
+                        <Separator layoutX="710.0" layoutY="500.0" prefHeight="0.0" prefWidth="103.0" />
+                        <Label layoutX="938.0" layoutY="86.0" text="Item Details" textFill="#0ca10e" underline="true">
+                           <font>
+                              <Font name="Castellar" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="855.0" layoutY="173.0" text="Description :">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="855.0" layoutY="230.0" text="Pack Size :">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="855.0" layoutY="287.0" text="Qty On Hand :">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="855.0" layoutY="350.0" text="Unit Price :">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDescription" layoutX="1005.0" layoutY="174.0">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPackSize" layoutX="1005.0" layoutY="231.0">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblQtyOnHand" layoutX="1005.0" layoutY="288.0">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUnitPrice" layoutX="1005.0" layoutY="351.0">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="973.0" layoutY="194.0" prefHeight="0.0" prefWidth="190.0" />
+                        <Separator layoutX="973.0" layoutY="252.0" prefHeight="0.0" prefWidth="190.0" />
+                        <Separator layoutX="973.0" layoutY="309.0" prefHeight="0.0" prefWidth="190.0" />
+                        <Separator layoutX="973.0" layoutY="371.0" prefHeight="0.0" prefWidth="190.0" />
+                        <Button fx:id="btnMostMovable" layoutX="959.0" layoutY="485.0" mnemonicParsing="false" onAction="#mostMovebleOnAction" style="-fx-background-color: #0a2e78;" text="Most Moveble" textFill="WHITE">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnLeastMoveble" layoutX="959.0" layoutY="425.0" mnemonicParsing="false" onAction="#leastMovebleOnAction" style="-fx-background-color: #124d00;" text="Least Moveble" textFill="WHITE">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Monthly,Annually,Daily Income">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Ellipse fill="#12d038" layoutX="205.0" layoutY="316.0" opacity="0.21" radiusX="202.0" radiusY="218.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Label fx:id="lblTheme" layoutX="508.0" layoutY="29.0" prefHeight="36.0" prefWidth="245.0" text="INCOME REPORTS" textFill="#0543ff">
+                           <font>
+                              <Font name="Ebrima Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="407.0" layoutY="63.0" prefHeight="0.0" prefWidth="448.0" style="-fx-background-color: #0543ff;" />
+                        <BarChart fx:id="barChartScale" animated="false" layoutX="437.0" layoutY="200.0" prefHeight="334.0" prefWidth="813.0" title="Total Sales">
+                          <xAxis>
+                            <CategoryAxis label="Items" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="units" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutX="173.0" layoutY="137.0" text="Total">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="174.0" layoutY="331.0" text="Sales">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSales" alignment="CENTER" layoutX="99.0" layoutY="388.0" prefHeight="12.0" prefWidth="215.0">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTotal" alignment="CENTER" layoutX="97.0" layoutY="201.0" prefHeight="50.0" prefWidth="216.0">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnMonthly" layoutX="833.0" layoutY="122.0" mnemonicParsing="false" onAction="#monthlyOnAction" prefHeight="37.0" prefWidth="136.0" style="-fx-background-radius: 25; -fx-background-color: #a46262;" text="Monthly">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDaily" layoutX="615.0" layoutY="122.0" mnemonicParsing="false" onAction="#dailyOnAction" prefHeight="37.0" prefWidth="136.0" style="-fx-background-radius: 25; -fx-background-color: #92f412;" text="Daily">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnAnnually" layoutX="1041.0" layoutY="122.0" mnemonicParsing="false" onAction="#annuallyOnAction" prefHeight="37.0" prefWidth="136.0" style="-fx-background-radius: 25; -fx-background-color: #0cbfb3;" text="Annually">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

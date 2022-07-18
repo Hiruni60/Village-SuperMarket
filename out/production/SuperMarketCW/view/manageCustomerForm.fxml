@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageCusPane" prefHeight="821.0" prefWidth="1295.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manageCustomerFormController">
+   <children>
+      <TabPane layoutY="105.0" prefHeight="720.0" prefWidth="1298.0" style="-fx-background-color: WHITE;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add New Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Separator layoutX="590.0" layoutY="92.0" orientation="VERTICAL" prefHeight="508.0" prefWidth="0.0" style="-fx-background-color: black;" />
+                        <ImageView fitHeight="680.0" fitWidth="554.0" layoutX="1.0" layoutY="1.0">
+                           <image>
+                              <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/2edca08.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="649.0" layoutY="97.0" text="Customer Id  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="649.0" layoutY="153.0" text="Customer Title  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="653.0" layoutY="208.0" text="Customer Name  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="659.0" layoutY="262.0" text="Address  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="667.0" layoutY="317.0" text="City  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="637.0" layoutY="386.0" text="Province  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="622.0" layoutY="450.0" text="Postal Code  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="511.0" layoutY="26.0" prefHeight="27.0" prefWidth="234.0" text="ADD NEW CUSTOMER" textFill="#0543ff">
+                           <font>
+                              <Font name="Ebrima Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnSave" layoutX="1043.0" layoutY="566.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="19.0" prefWidth="184.0" style="-fx-background-color: #38a0e0;" text="SAVE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtCusName" alignment="CENTER" layoutX="837.0" layoutY="204.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtAddress" alignment="CENTER" layoutX="788.0" layoutY="258.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCity" alignment="CENTER" layoutX="759.0" layoutY="313.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtProvince" alignment="CENTER" layoutX="752.0" layoutY="382.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPostalCode" alignment="CENTER" layoutX="782.0" layoutY="446.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="cmbCusTitle" layoutX="846.0" layoutY="149.0" prefHeight="30.0" prefWidth="194.0" />
+                        <Label fx:id="lblCusId" layoutX="862.0" layoutY="94.0" prefHeight="22.0" prefWidth="138.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Update Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Separator layoutX="566.0" layoutY="93.0" orientation="VERTICAL" prefHeight="532.0" prefWidth="6.0" style="-fx-background-color: BLACK;" />
+                        <ImageView fitHeight="603.0" fitWidth="560.0" layoutY="79.0">
+                           <image>
+                              <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/vector-of-a-young-elegant-woman-pushing-supermarket-shopping-cart-full-of-groceries-2G3NFCW.jpg" />
+                           </image>
+                        </ImageView>
+                        <ComboBox fx:id="cmbCusId" layoutX="235.0" layoutY="91.0" onAction="#cmbCusIdOnAction" prefHeight="31.0" prefWidth="202.0" />
+                        <Label layoutX="54.0" layoutY="96.0" text="Customer Id  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="616.0" layoutY="121.0" text="Customer Title  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="613.0" layoutY="182.0" text="Customer Name  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="633.0" layoutY="249.0" text="Address  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="651.0" layoutY="319.0" text="City  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="627.0" layoutY="393.0" text="Province  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="627.0" layoutY="449.0" text="Postal Code  :">
+                           <font>
+                              <Font name="Castellar" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="485.0" layoutY="31.0" prefHeight="27.0" prefWidth="234.0" text="UPDATE CUSTOMER" textFill="#0543ff">
+                           <font>
+                              <Font name="Ebrima Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnUpdate" layoutX="967.0" layoutY="555.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="19.0" prefWidth="184.0" style="-fx-background-color: #38a0e0;" text="UPDATE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtPostalCode1" alignment="CENTER" layoutX="786.0" layoutY="445.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtProvince1" alignment="CENTER" layoutX="760.0" layoutY="389.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCity1" alignment="CENTER" layoutX="744.0" layoutY="315.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtAddress1" alignment="CENTER" layoutX="760.0" layoutY="245.0">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCusName1" alignment="CENTER" layoutX="817.0" layoutY="178.0" onKeyReleased="#textFields_Key_Released">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnDelete" layoutX="672.0" layoutY="555.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="19.0" prefWidth="184.0" style="-fx-background-color: #38a0e0;" text="DELETE" textFill="YELLOW">
+                           <font>
+                              <Font name="MS Outlook" size="18.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="cmbCusTitle1" layoutX="817.0" layoutY="117.0" prefHeight="31.0" prefWidth="187.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Load All Customer">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblLoadCustomer" layoutX="69.0" layoutY="123.0" prefHeight="464.0" prefWidth="1161.0">
+                          <columns>
+                            <TableColumn fx:id="colCusId" prefWidth="107.99996948242188" text="Cust. Id" />
+                              <TableColumn fx:id="colCusTitle" prefWidth="86.00003051757812" text="Cust. Title" />
+                              <TableColumn fx:id="colCusName" prefWidth="179.0" text="Name" />
+                              <TableColumn fx:id="colAddress" prefWidth="200.0" text="Address" />
+                              <TableColumn fx:id="colCity" prefWidth="161.0" text="City" />
+                              <TableColumn fx:id="colProvince" prefWidth="185.0" text="Province" />
+                              <TableColumn fx:id="colPostalcode" prefWidth="240.0" text="Postal Code" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="473.0" layoutY="33.0" text="MANAGE CUSTOMER" underline="true">
+         <font>
+            <Font name="Bell MT" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imhBack" fitHeight="50.0" fitWidth="46.0" layoutX="6.0" layoutY="3.0" onMousePressed="#BackOnMousePressed">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/png-clipart-button-return-s-blue-text-thumbnail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="101.0" layoutX="1190.0" layoutY="5.0">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/108612_9321892_1703682_bd56abfc_image.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

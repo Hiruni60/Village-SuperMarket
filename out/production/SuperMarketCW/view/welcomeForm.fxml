@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="villageContext" prefHeight="584.0" prefWidth="783.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.welcomeFormController">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="829.0" layoutX="-46.0" layoutY="-4.0">
+         <image>
+            <Image url="file:/E:/ijse/ijse60/fx/SuperMarketCW/src/view/assests/108612_9321892_1703682_bd56abfc_image.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="MyProgress" layoutY="561.0" prefHeight="23.0" prefWidth="783.0" progress="0.0">
+         <effect>
+            <ColorAdjust brightness="-0.45" contrast="0.4" />
+         </effect>
+      </ProgressBar>
+   </children>
+</AnchorPane>
